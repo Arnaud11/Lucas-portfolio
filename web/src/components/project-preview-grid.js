@@ -3,12 +3,14 @@ import React from 'react'
 import ProjectPreview from './project-preview'
 import styles from './project-preview-grid.module.css'
 import { Carousel } from 'react-bootstrap'
+import { carouselBlock } from '../components/project-preview-grid.module.css'
+
 
 function ProjectPreviewGrid(props) {
   return (
     <div className={styles.root}>
       {props.title && <h2 className={styles.headline}>{props.title}</h2>}
-      <Carousel>
+      <Carousel className={carouselBlock}>
           {props.nodes &&
             props.nodes.map(node => (
                 <Carousel.Item key={node.id}>
