@@ -10,13 +10,13 @@ function ProjectPreviewGrid(props) {
   return (
     <div className={styles.root}>
       {props.title && <h2 className={styles.headline}>{props.title}</h2>}
-      <Carousel className={carouselBlock}>
-          {props.nodes &&
-            props.nodes.map(node => (
-                <Carousel.Item key={node.id}>
-                  <ProjectPreview {...node} />
-                </Carousel.Item>
-            ))}
+      <Carousel className={carouselBlock} indicators={false} controls={false} interval={2500} slide={false}>
+        {props.nodes &&
+          props.nodes.map(node => (
+            <Carousel.Item key={node.id}>
+              <ProjectPreview {...node} />
+            </Carousel.Item>
+          ))}
       </Carousel>
       {props.browseMoreHref && (
         <div className={styles.browseMoreNav}>
