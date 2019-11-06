@@ -10,7 +10,7 @@ function ProjectPreviewGrid(props) {
   return (
     <div className={styles.root}>
       {props.title && <h2 className={styles.headline}>{props.title}</h2>}
-      <Carousel className={carouselBlock} indicators={false} controls={false} interval={2500} slide={false}>
+      <Carousel className={carouselBlock} indicators={false} controls={true} interval={3000} slide={false}>
         {props.nodes &&
           props.nodes.map(node => (
             <Carousel.Item key={node.id}>
