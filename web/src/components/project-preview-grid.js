@@ -14,7 +14,7 @@ function ProjectPreviewGrid(props) {
         {props.nodes &&
           props.nodes.map(node => (
             <Carousel.Item key={node.id}>
-              <ProjectPreview {...node} />
+              <ProjectPreview  {...node} />
             </Carousel.Item>
           ))}
       </Carousel>

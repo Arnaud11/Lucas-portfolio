@@ -14,8 +14,8 @@ function ProjectPreview (props) {
         {props.mainImage && props.mainImage.asset && (
           <img
             src={imageUrlFor(buildImageObj(props.mainImage))
-              .width(1080)
-              .height(Math.floor(1080))
+              .width(1200)
+              .height(Math.floor(1400))
               .url()}
             alt={props.mainImage.alt}
           />

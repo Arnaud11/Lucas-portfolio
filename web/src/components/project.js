@@ -18,7 +18,7 @@ function Project (props) {
           <img
             src={imageUrlFor(buildImageObj(mainImage))
               .width(1200)
-              .height(Math.floor((9 / 16) * 1440))
+              .height(1400)
               .fit('clip')
               .url()}
             alt={mainImage.alt}
